@@ -1,4 +1,4 @@
-/* Minecraft Theme Colors */
+/* Minecraft Color Palette */
 :root {
     --dark-red: #aa0000;        
     --red: #ff5555;            
@@ -18,96 +18,81 @@
     --black: #000000;           
 }
 
-/* General Body Styles */
+/* General body styling */
 body {
     background-color: var(--dark-blue);
-    background-image: url('/assets/images/minecraft-bg.png');
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    color: var(--white);
-    font-family: 'Helvetica Neue', sans-serif;
-    margin: 0;
-    padding: 0;
-    letter-spacing: 0.5px;
-    line-height: 1.6;
-    padding-top: 60px; /* Ensures content doesn't overlap with the navbar */
-}
-
-/* Fixed Top Navigation Bar */
-.minecraft-nav {
-    background-color: var(--dark-gray);
-    padding: 10px 15px; /* Reduced padding for less height */
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.5);
-    position: fixed; /* Keeps the navbar fixed at the top */
-    top: 0;
-    width: 100%;
-    z-index: 1000; /* Ensures it stays on top of other elements */
-    display: flex;
-    justify-content: space-around; /* Space out the navigation items */
-    align-items: center; /* Align items vertically in the center */
-    height: 50px; /* Define the height to keep it compact */
-}
-
-.minecraft-nav .navbar-list {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    gap: 15px; /* Spacing between navigation items */
-}
-
-.minecraft-nav .navbar-list li {
-    display: inline;
-}
-
-.minecraft-nav .navbar-list li a {
     font-family: 'Press Start 2P', cursive;
     color: var(--white);
-    background-color: var(--dark-blue);
-    text-decoration: none;
-    font-size: 0.9rem; /* Slightly smaller font size */
-    padding: 8px 12px; /* Reduced padding for compactness */
-    border-radius: 5px;
-    transition: background-color 0.3s ease, color 0.3s ease;
+    margin: 0;
+    padding: 0;
 }
 
-.minecraft-nav .navbar-list li a:hover {
+/* Navbar Styling */
+.minecraft-nav {
+    background-color: var(--dark-gray);
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 999;
+}
+
+.minecraft-nav .navbar-nav li a {
+    color: var(--gold);
+    padding: 10px;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    text-shadow: 2px 2px var(--black);
+}
+
+.minecraft-nav .navbar-nav li a:hover {
     background-color: var(--gold);
     color: var(--black);
 }
 
-/* Responsive Header */
-header h1 {
-    font-family: 'Press Start 2P', cursive;
-    font-size: 2.5rem;
-    letter-spacing: 1px;
-    color: var(--gold);
-    text-shadow: 2px 2px var(--dark-gray);
-    margin-bottom: 20px;
-    text-align: center;
-}
-
-header p {
-    font-size: 1.1rem;
-    letter-spacing: 0.5px;
+/* Jumbotron header */
+.jumbotron.masthead {
+    background-color: var(--dark-purple);
     color: var(--white);
-    text-align: center;
-    margin-bottom: 20px;
+    padding: 60px 0;
+    margin-top: 60px;
 }
 
-/* Sections */
-h2 {
-    color: var(--light-purple);
-    text-align: center;
-    margin-bottom: 20px;
-    letter-spacing: 1px;
+.jumbotron h1 {
+    color: var(--gold);
+    font-size: 2.5rem;
 }
 
-p {
-    font-size: 1rem;
-    letter-spacing: 1px;
-    line-height: 1.8;
+.jumbotron p {
+    font-size: 1.2rem;
+}
+
+/* Image Style */
+.minecraft-style {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.minecraft-style:hover {
+    transform: scale(1.2); /* Slightly increase size on hover */
+    box-shadow: 0 0 15px var(--gold); /* Add a glowing effect */
+}
+
+/* Buttons */
+.btn-primary {
+    background-color: var(--dark-green);
+    border-color: var(--dark-green);
+    color: var(--yellow);
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    padding: 10px 20px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: var(--gold);
+    color: var(--black);
 }
 
 /* Footer */
@@ -116,73 +101,10 @@ p {
     color: var(--yellow);
     padding: 20px;
     text-align: center;
-    box-shadow: 0px -4px 6px rgba(0, 0, 0, 0.5);
-    margin-top: 50px;
 }
-
-.minecraft-footer p {
-    margin: 10px 0;
-}
-
 .minecraft-footer a.footer-link {
     color: var(--aqua);
-    text-decoration: none;
-    font-weight: bold;
-    transition: color 0.3s ease;
 }
-
 .minecraft-footer a.footer-link:hover {
     color: var(--gold);
-}
-
-/* Buttons (optional if needed) */
-button {
-    background-color: var(--green);
-    color: var(--black);
-    font-family: 'Press Start 2P', cursive;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-button:hover {
-    background-color: var(--dark-green);
-    color: var(--white);
-}
-
-/* Media Queries for Small Devices */
-@media (max-width: 768px) {
-    body {
-        font-size: 14px;
-        background-attachment: scroll; /* Fix for background on mobile */
-    }
-
-    /* Stacked navigation on smaller screens */
-    .minecraft-nav {
-        flex-direction: column;
-        height: auto; /* Allow height to adjust on mobile */
-        padding: 15px 10px; /* Increase padding for easier touch targets */
-    }
-
-    .minecraft-nav .navbar-list {
-        flex-direction: column; /* Stack items vertically on mobile */
-        align-items: center; /* Center align items on small screens */
-        gap: 10px; /* Space between items on mobile */
-    }
-
-    .minecraft-nav .navbar-list li a {
-        padding: 10px 20px; /* Increase padding for touch targets on mobile */
-        font-size: 1rem; /* Slightly larger font size for readability on small screens */
-    }
-
-    /* Adjust header size for smaller screens */
-    header h1 {
-        font-size: 2rem;
-    }
-
-    p {
-        font-size: 0.9rem;
-    }
 }

@@ -3,64 +3,100 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <!-- Adding Minecraft Font -->
-    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
-    
-    <!-- Bootstrap CSS -->
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <title>Home - Cecilia Benitez Montiel</title>
+    <meta name="description" content="Cecilia Benitez Montiel's portfolio - IT Consultant, Full-Stack Developer, Project Manager, and Cybersecurity Expert.">
+    <meta name="author" content="Cecilia Benitez Montiel">
 
-    <!-- Custom CSS for the Minecraft theme -->
+    <!-- Minecraft Font and Bootstrap -->
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Custom CSS -->
     <link href="/assets/css/styles.css" rel="stylesheet">
-    
-    <!-- Page Title -->
-    <title>Home | CBM IT Consultant</title>
-    
-    <!-- Favicon -->
+
+    <!-- Favicon and Icons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/assets/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/assets/ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="/assets/ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="/assets/ico/apple-touch-icon-57-precomposed.png">
     <link rel="shortcut icon" href="/assets/ico/favicon.png">
 </head>
-<body>
-    <!-- Navigation Bar -->
-    <nav class="minecraft-nav">
-    <ul class="navbar-list">
-        <li><a href="/">Home</a></li>
-        <li><a href="/work.html">Professional Experience</a></li>
-        <li><a href="/volunteer.html">Volunteer Experience</a></li>
-        <li><a href="/projects.html">Key Projects</a></li>
-        <li><a href="/education.html">Education</a></li>
-        <li><a href="/skills.html">Skills</a></li>
-    </ul>
+
+<body data-spy="scroll" data-target=".bs-docs-sidebar">
+    <!-- Include Navigation Bar -->
+    <!-- Updated nav.html with toggle functionality -->
+<nav class="minecraft-nav navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+        <!-- Navbar Brand (optional, can be a logo or title) -->
+        <a class="navbar-brand" href="/">Cecilia Benitez Montiel</a>
+        
+        <!-- Navbar Toggler for mobile view -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Collapsible part of the navbar -->
+        <div class="collapse navbar-collapse" id="navbarToggler">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="/">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/work.html">Professional Experience</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/volunteer.html">Volunteer Experience</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/projects.html">Key Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/education.html">Education</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/skills.html">Skills</a>
+                </li>
+            </ul>
+        </div>
+    </div>
 </nav>
 
-    <!-- Main content block -->
-    <div class="container mt-5">
-            <!-- Header proper labels-->
-     <header>
-        <h1>Cecilia Benitez Montiel</h1>
-        <p>IT | Biz & Marketing Consultant<br></p>
-    </header>
 
-    <h2>Contact</h2>
-    <p><a href="https://www.linkedin.com/in/cecil-b-3b9a7718b/"><strong>Linkedin |</strong> </a>  
-        <a href="https://github.com/ch1llc0d3"><strong>Github |</strong> </a>
-        <a href="https://chillc0d3.pythonanywhere.com/"><strong>Projects</strong></a>
-        <p>Email: chillcrib7@gmail.com</p>
+    <!-- Main Content Block (Injected by individual pages) -->
+    <div class="container mt-5">
+        <header class="text-center">
+    <h1>Cecilia Benitez Montiel</h1>
+    <p>IT | Biz & Marketing Consultant</p>
+</header>
+
+<!-- Contact Section -->
+<section class="text-center mt-4">
+    <img class="minecraft-style" src="/assets/images/minecraft01.jpg" alt="Minecraft Themed Image">
+    <div>
+        <h2>Contact</h2>
+        <p>
+            <a href="https://www.linkedin.com/in/cecil-b-3b9a7718b/" target="_blank"><strong>LinkedIn</strong></a> | 
+            <a href="https://github.com/ch1llc0d3" target="_blank"><strong>GitHub</strong></a> | 
+            <a href="https://chillc0d3.pythonanywhere.com/" target="_blank"><strong>Projects</strong></a>
+        </p>
+        <p>Email: <a href="mailto:chillcrib7@gmail.com">chillcrib7@gmail.com</a></p>
         <p>Phone: +595 972 340373</p>
 
-</body>
-</html>
+    </div>
+</section>
+
     </div>
 
-    <!-- Footer -->
-    <footer class="minecraft-footer">
-        <p>Find more projects on <a href="https://github.com/ch1llc0d3" class="footer-link">GitHub</a></p>
-        <p><a href="/" class="footer-link">Home</a></p>
+    <!-- Footer Section -->
+    <footer class="minecraft-footer text-center py-4">
+      <p>Find more projects on <a href="https://github.com/ch1llc0d3" class="footer-link" target="_blank">GitHub</a></p>
+      <p><a href="/">Back to Home</a></p>
     </footer>
 
-
     <!-- Optional JavaScript (Bootstrap JS and custom scripts) -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://code.jquery.com/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
     <script src="/assets/js/scripts.js"></script>
+
 </body>
 </html>

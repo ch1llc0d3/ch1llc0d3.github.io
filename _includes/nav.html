@@ -1,10 +1,36 @@
-<nav class="minecraft-nav">
-    <ul class="navbar-list">
-        <li><a href="{{ '/' | relative_url }}">Home</a></li>
-        <li><a href="{{ '/work.html' | relative_url }}">Professional Experience</a></li>
-        <li><a href="{{ '/volunteer.html' | relative_url }}">Volunteer Experience</a></li>
-        <li><a href="{{ '/projects.html' | relative_url }}">Key Projects</a></li>
-        <li><a href="{{ '/education.html' | relative_url }}">Education</a></li>
-        <li><a href="{{ '/skills.html' | relative_url }}">Skills</a></li>
-    </ul>
+<!-- Updated nav.html with toggle functionality -->
+<nav class="minecraft-nav navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+        <!-- Navbar Brand (optional, can be a logo or title) -->
+        <a class="navbar-brand" href="{{ '/' | relative_url }}">Cecilia Benitez Montiel</a>
+        
+        <!-- Navbar Toggler for mobile view -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Collapsible part of the navbar -->
+        <div class="collapse navbar-collapse" id="navbarToggler">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ '/' | relative_url }}">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ '/work.html' | relative_url }}">Professional Experience</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ '/volunteer.html' | relative_url }}">Volunteer Experience</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ '/projects.html' | relative_url }}">Key Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ '/education.html' | relative_url }}">Education</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ '/skills.html' | relative_url }}">Skills</a>
+                </li>
+            </ul>
+        </div>
+    </div>
 </nav>
