@@ -1,36 +1,53 @@
 /* Minecraft Color Palette */
 :root {
-    --dark-red: #aa0000;        
-    --red: #ff5555;            
-    --gold: #ffaa00;         
-    --yellow: #ffff55;          
-    --dark-green: #00aa00;     
-    --green: #55ff55;          
-    --aqua: #55ffff;           
-    --dark-aqua: #00aaaa;      
-    --dark-blue: #0000aa;       
-    --blue: #5555ff;            
-    --light-purple: #ff55ff;    
-    --dark-purple: #aa00aa;     
-    --white: #ffffff;           
-    --gray: #aaaaaa;            
-    --dark-gray: #555555;       
-    --black: #000000;           
+    --dark-red: #aa0000;
+    --red: #ff5555;
+    --gold: #ffaa00;
+    --yellow: #ffff55;
+    --dark-green: #00aa00;
+    --green: #55ff55;
+    --aqua: #55ffff;
+    --dark-aqua: #00aaaa;
+    --dark-blue: #0000aa;
+    --blue: #5555ff;
+    --light-purple: #ff55ff;
+    --dark-purple: #aa00aa;
+    --white: #ffffff;
+    --gray: #aaaaaa;
+    --dark-gray: #555555;
+    --black: #000000;
 }
 
-/* General body styling */
+/* General Body Styling */
 body {
     background-color: var(--dark-blue);
-    font-family: 'Press Start 2P', cursive;
+    font-family: 'Press Start 2P', cursive; /* Default font for headers */
     color: var(--white);
     margin: 0;
     padding: 0;
+    padding-top: 50px; /* Prevents content from overlapping the navbar */
 }
 
-/* Navbar Compact Design */
+/* Font for Readable Text Sections */
+.readable-text {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; /* Readable sections */
+    font-size: 1rem;
+    line-height: 1.8;
+    letter-spacing: 0.5px;
+    color: var(--white);
+}
+
+/* Readable Section Headings */
+.readable-text h2 {
+    font-family: 'Press Start 2P', cursive; /* Maintain the Minecraft theme for headers */
+    color: var(--gold);
+    margin-top: 20px;
+}
+
+/* Navbar Styling */
 .minecraft-nav {
     background-color: var(--dark-gray);
-    padding: 8px 10px; /* Reduce padding for compactness */
+    padding: 8px 10px;
     position: fixed;
     width: 100%;
     top: 0;
@@ -39,8 +56,8 @@ body {
 
 .minecraft-nav .navbar-nav li a {
     color: var(--gold);
-    padding: 8px 12px; /* Reduce padding for smaller nav items */
-    font-size: 0.9rem; /* Smaller font for compact look */
+    padding: 8px 12px;
+    font-size: 0.9rem;
     text-shadow: 1px 1px var(--black);
 }
 
@@ -49,26 +66,7 @@ body {
     color: var(--black);
 }
 
-/* Make Navbar Sticky with Space Below for Content */
-body {
-    padding-top: 50px; /* Ensures content does not overlap the navbar */
-}
-
-/* Responsive Adjustments for Smaller Screens */
-@media (max-width: 768px) {
-    .minecraft-nav .navbar-nav li {
-        text-align: center;
-        margin-bottom: 10px;
-    }
-
-    .minecraft-nav .navbar-nav li a {
-        padding: 10px;
-        font-size: 1rem; /* Larger text for easier clicking on mobile */
-    }
-}
-
-
-/* Jumbotron header */
+/* Jumbotron Header */
 .jumbotron.masthead {
     background-color: var(--dark-purple);
     color: var(--white);
@@ -85,20 +83,22 @@ body {
     font-size: 1.2rem;
 }
 
-/* Image Style */
+/* Image Styling */
 .minecraft-style {
     width: 100px;
     height: 100px;
     border-radius: 50%;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
+
 .minecraft-style:hover {
     transform: scale(1.2); /* Slightly increase size on hover */
     box-shadow: 0 0 15px var(--gold); /* Add a glowing effect */
 }
 
-/* Buttons */
+/* Button Styling */
 .btn-primary {
+    font-family: 'Press Start 2P', cursive;
     background-color: var(--dark-green);
     border-color: var(--dark-green);
     color: var(--yellow);
@@ -113,16 +113,31 @@ body {
     color: var(--black);
 }
 
-/* Footer */
+/* Footer Styling */
 .minecraft-footer {
     background-color: var(--dark-red);
     color: var(--yellow);
     padding: 20px;
     text-align: center;
 }
+
 .minecraft-footer a.footer-link {
     color: var(--aqua);
 }
+
 .minecraft-footer a.footer-link:hover {
     color: var(--gold);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .minecraft-nav .navbar-nav li {
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    .minecraft-nav .navbar-nav li a {
+        padding: 10px;
+        font-size: 1rem; /* Larger text for easier clicking on mobile */
+    }
 }
