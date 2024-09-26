@@ -1,0 +1,113 @@
+/* Minecraft Theme */ 
+:root {
+    --dark-red: #aa0000;        
+    --red: #ff5555;            
+    --gold: #ffaa00;         
+    --yellow: #ffff55;          
+    --dark-green: #00aa00;     
+    --green: #55ff55;          
+    --aqua: #55ffff;           
+    --dark-aqua: #00aaaa;      
+    --dark-blue: #0000aa;       
+    --blue: #5555ff;            
+    --light-purple: #ff55ff;    
+    --dark-purple: #aa00aa;     
+    --white: #ffffff;           
+    --gray: #aaaaaa;            
+    --dark-gray: #555555;       
+    --black: #000000;           
+}
+
+/* Body */
+body {
+    background-color: var(--dark-blue);
+    background-image: url('/assets/images/minecraft-bg.png');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: var(--white);
+    font-family: 'Helvetica Neue', sans-serif;
+    margin: 0;
+    padding: 0;
+    letter-spacing: 0.5px;
+    line-height: 1.6;
+    position: relative;
+}
+
+body::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: -1;
+}
+
+/* Header */
+header h1 {
+    font-family: 'Press Start 2P', cursive;
+    letter-spacing: 1px;
+    font-size: 28px;
+    color: var(--gold);
+    text-shadow: 2px 2px var(--dark-gray);
+}
+
+header {
+    background-color: var(--dark-green);
+    padding: 20px;
+    text-align: center;
+    border-bottom: 5px solid var(--dark-red);
+}
+
+/* Navigation */
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    background-color: var(--dark-gray);
+    padding: 10px;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    font-family: 'Press Start 2P', cursive;
+    color: var(--white);
+    background-color: var(--dark-gray);
+    text-decoration: none;
+    font-size: 18px;
+    padding: 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: var(--gold);
+    color: var(--dark-blue);
+}
+
+/* Sections */
+h2 {
+    color: var(--light-purple);
+    text-align: center;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 16px;
+    letter-spacing: 0.5px;
+    line-height: 1.8;
+}
+
+/* Footer */
+footer {
+    background-color: var(--dark-green);
+    color: var(--yellow);
+    padding: 20px;
+    text-align: center;
+}
