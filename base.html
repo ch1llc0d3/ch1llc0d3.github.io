@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}CBM IT Consultant{% endblock %}</title>
+    <!-- Link to Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Link to the CSS file -->
+    <link rel="stylesheet" href="assets/css/styles.css"></head>
+<body>
+    <!-- fancy nav bar-->
+    <nav>
+        <ul>
+            <li><a href="#professional-experience">Professional Experience</a></li>
+            <li><a href="#volunteer-experience">Volunteer Experience</a></li>
+            <li><a href="#key-projects">Key Projects</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main content block -->
+    <div class="main-content">
+        {% block content %}{% endblock %}
+    </div>
+
+    <!-- footer with github link-->
+    <footer>
+        <p>Find more projects in Github: <a href="https://github.com/ch1llc0d3">My Github</a></p>
+    </footer>
+
+    <!-- JavaScript-->
+    <script src="assets/js/javascripts.js"></script>
+</body>
+</html>
