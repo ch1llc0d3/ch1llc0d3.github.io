@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ page.title }} | CBM IT Consultant</title>
+    <!-- Link to CSS file -->
+    <link rel="stylesheet" href="{{ '/assets/css/styles.css' | relative_url }}">
+</head>
+<body>
+    <!-- Include navigation bar -->
+    {% include nav.html %}
+    
+    <!-- Main content block (injected by individual pages) -->
+    <div class="content">
+        {{ content }}
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>Find more projects in Github: <a href="https://github.com/ch1llc0d3">My Github</a></p>
+    </footer>
+
+    <!-- Optional JavaScript -->
+    <script src="{{ '/assets/js/scripts.js' | relative_url }}"></script>
+</body>
+</html>

@@ -1,0 +1,7 @@
+title: "CBM IT Consultant"
+baseurl: "" # Leave empty if you're deploying to the root
+url: "http://localhost:4000" # Local URL for testing
+
+# Exclude from processing
+exclude:
+  - README.md
