@@ -1,0 +1,23 @@
+/* Custom styles for the page */
+body {
+    padding-top: 56px; /* Padding for fixed navbar */
+}
+
+/* Header/Jumbotron */
+.jumbotron {
+    background-color: #343a40;
+    color: white;
+    padding: 100px 25px;
+}
+
+/* Section Headers */
+h2 {
+    color: #ffcc00;
+    margin-bottom: 30px;
+}
+
+/* Footer */
+footer {
+    background-color: #343a40;
+    color: white;
+}
