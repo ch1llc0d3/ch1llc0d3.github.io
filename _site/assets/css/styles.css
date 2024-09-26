@@ -27,10 +27,10 @@ body {
     padding: 0;
 }
 
-/* Navbar Styling */
+/* Navbar Compact Design */
 .minecraft-nav {
     background-color: var(--dark-gray);
-    padding: 10px;
+    padding: 8px 10px; /* Reduce padding for compactness */
     position: fixed;
     width: 100%;
     top: 0;
@@ -39,16 +39,34 @@ body {
 
 .minecraft-nav .navbar-nav li a {
     color: var(--gold);
-    padding: 10px;
-    text-transform: uppercase;
-    font-size: 0.9rem;
-    text-shadow: 2px 2px var(--black);
+    padding: 8px 12px; /* Reduce padding for smaller nav items */
+    font-size: 0.9rem; /* Smaller font for compact look */
+    text-shadow: 1px 1px var(--black);
 }
 
 .minecraft-nav .navbar-nav li a:hover {
     background-color: var(--gold);
     color: var(--black);
 }
+
+/* Make Navbar Sticky with Space Below for Content */
+body {
+    padding-top: 50px; /* Ensures content does not overlap the navbar */
+}
+
+/* Responsive Adjustments for Smaller Screens */
+@media (max-width: 768px) {
+    .minecraft-nav .navbar-nav li {
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    .minecraft-nav .navbar-nav li a {
+        padding: 10px;
+        font-size: 1rem; /* Larger text for easier clicking on mobile */
+    }
+}
+
 
 /* Jumbotron header */
 .jumbotron.masthead {
