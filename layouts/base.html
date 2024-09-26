@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% if page.title %}{{ page.title }} | {% endif %}CBM IT Consultant</title>
+    <!-- Link to Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Link to the CSS file -->
+    <link rel="stylesheet" href="{{ '/assets/css/styles.css' | relative_url }}">
+</head>
+<body>
+    <!-- fancy nav bar-->
+    {% include nav.html %}
+
+    <!-- background music-->
+    <audio autoplay loop>
+        <source src="{{ '/assets/audio/piano.mp3' | relative_url }}" type="audio/mp3">    
+        Your browser does not support the audio element.
+    </audio>
+    
+    <!-- Main Content Block-->
+    <div class="main-content">
+        {% block content %}{% endblock %}
+    </div>
+
+    <!-- footer with github link-->
+    <footer>
+        <p>Find more projects in Github: <a href="https://github.com/ch1llc0d3" target="_blank">My Github</a></p>
+    </footer>
+
+    <!-- JavaScript-->
+    <script src="{{ '/assets/js/scripts.js' | relative_url }}"></script>
+</body>
+</html>
