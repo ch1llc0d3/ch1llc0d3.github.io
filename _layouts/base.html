@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ page.title }} | CBM IT Consultant</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Link to the CSS file -->
+    <link rel="stylesheet" href="{{ '/assets/css/styles.css' | relative_url }}">
+</head>
+<body>
+    <!-- Include the navigation bar -->
+    {% include nav.html %}
+
+    <!-- Main Content Block -->
+    <div class="main-content">
+        {{ content }}
+    </div>
+
+    <!-- Background music hidden -->
+    <audio id="hover-audio" src="{{ '/assets/audio/piano.mp3' | relative_url }}"></audio>
+
+    <!-- Footer -->
+    <footer>
+        <p><a href="https://github.com/ch1llc0d3" target="_blank">My GitHub</a></p>
+        <p><a href="{{ '/' | relative_url }}">Home</a></p>
+    </footer>
+
+    <!-- Link to JavaScript file -->
+    <script src="{{ '/assets/js/scripts.js' | relative_url }}"></script>
+</body>
+</html>
